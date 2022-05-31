@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useState, useEffect } from "react";
 
 function App() {
@@ -14,12 +13,6 @@ function App() {
   }, []);
   console.log(movies);
   return <div>{loading ? <h1>Loading...</h1> : null}</div>;
-=======
-import "./App.css";
-
-function App() {
-  return <div className="App"></div>;
->>>>>>> main
 }
 
 export default App;
