@@ -20,7 +20,7 @@ function Detail() {
   return loading ? (
     <h1>Loading...</h1>
   ) : (
-    <div>
+    <div className="movie_list_outer">
       <MovieDetail
         medium_cover_image={detail.medium_cover_image}
         title={detail.title}

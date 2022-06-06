@@ -11,7 +11,7 @@ function MovieDetail({
   year,
 }) {
   return (
-    <div>
+    <div className="detail">
       <img src={medium_cover_image} alt={title} />
       <h2>{title}</h2>
       <p>

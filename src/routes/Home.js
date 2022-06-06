@@ -21,7 +21,7 @@ function Home() {
       {loading ? (
         <h1>Loading...</h1>
       ) : (
-        <div>
+        <div className="movie_list_outer">
           {movies.map((movie) => (
             <Movie
               key={movie.id}

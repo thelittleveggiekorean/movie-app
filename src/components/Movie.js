@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 function Movie({ id, coverImg, title, summary, genres }) {
   return (
-    <div>
+    <div className="movie_list">
       <img src={coverImg} alt={title}></img>
       <h2>
         <Link to={`movie/${id}`}>{title}</Link>
       </h2>
-      <p>{summary}</p>
+      <p>{summary.length > 235 ? `${summary.slice(0, 235)}...` : summary}</p>
       <ul>
         {genres.map((genre) => (
           <li key={genre}>{genre}</li>
